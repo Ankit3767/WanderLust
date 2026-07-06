@@ -1,3 +1,4 @@
+// console.log("Validation script loaded");
 (() => {
   'use strict'
 
