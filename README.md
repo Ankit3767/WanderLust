@@ -1,29 +1,27 @@
 # 🏡 Airbnb Clone
 
-A full-stack Airbnb-inspired web application that allows users to explore, create, edit, and manage property listings. This project is built using **Node.js**, **Express.js**, **MongoDB**, **Mongoose**, and **EJS**, following the **MVC Architecture** and RESTful principles.
+A full-stack Airbnb-inspired web application built with **Node.js**, **Express.js**, **MongoDB**, **Mongoose**, **EJS**, and **Bootstrap**. The application allows users to browse, create, update, and delete property listings while following the MVC architecture and RESTful routing principles.
 
 ---
 
-## 📖 About the Project
+## 📖 About
 
-This project is a clone of Airbnb's core listing functionality. Users can browse available properties, view listing details, and perform complete CRUD (Create, Read, Update, Delete) operations on listings.
-
-The application demonstrates backend development concepts such as routing, middleware, database integration, server-side rendering, validation, and error handling.
+This project is an Airbnb-inspired web application developed to practice full-stack web development concepts. It demonstrates CRUD operations, server-side rendering, MongoDB database integration, routing, middleware, form validation, and responsive UI development.
 
 ---
 
 ## ✨ Features
 
-- 🏠 View all property listings
-- 🔍 View complete details of a listing
-- ➕ Add a new property listing
-- ✏️ Edit existing listings
+- 🏠 Browse all property listings
+- 📄 View listing details
+- ➕ Create new listings
+- ✏️ Update existing listings
 - 🗑️ Delete listings
-- 📄 RESTful Routes
-- ✅ Server-side Form Validation
+- 📦 RESTful Routes
+- ✅ Server-side Validation using Joi
 - ⚠️ Custom Error Handling
 - 🎨 Responsive UI with Bootstrap
-- 📦 MVC Project Structure
+- 🗂️ MVC Architecture
 - 🗃️ MongoDB Database Integration
 
 ---
@@ -51,11 +49,10 @@ The application demonstrates backend development concepts such as routing, middl
 
 - Express
 - Mongoose
-- Method-Override
 - EJS
 - EJS-Mate
 - Joi
-- Path
+- Method-Override
 
 ---
 
@@ -77,6 +74,8 @@ Airbnb-1
 │   ├── listings/
 │   └── includes/
 │
+├── screenshots/
+│
 ├── app.js
 ├── schema.js
 ├── package.json
@@ -86,15 +85,15 @@ Airbnb-1
 
 ---
 
-## ⚙️ Installation
+## 🚀 Installation
 
-### Clone the Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/Ankit3767/Airbnb-1.git
 ```
 
-### Move into the Project Folder
+### Move into Project Folder
 
 ```bash
 cd Airbnb-1
@@ -108,21 +107,21 @@ npm install
 
 ### Start MongoDB
 
-Make sure MongoDB is installed and running locally.
+Ensure MongoDB is running locally.
 
-Default MongoDB URL:
+Default connection:
 
 ```text
 mongodb://127.0.0.1:27017/wanderlust
 ```
 
-### Seed the Database (Optional)
+### Initialize Sample Data (Optional)
 
 ```bash
 node init/index.js
 ```
 
-### Start the Server
+### Run the Project
 
 ```bash
 node app.js
@@ -134,7 +133,7 @@ or
 nodemon app.js
 ```
 
-Open your browser and visit:
+Visit:
 
 ```
 http://localhost:3767/listings
@@ -142,16 +141,37 @@ http://localhost:3767/listings
 
 ---
 
-## 📸 Screenshots
+# 📸 Project Screenshots
 
-You can add screenshots of your project here.
+## 🏠 Home Page
 
-Example:
+Displays all available property listings.
 
-- Home Page
-- Listing Details
-- Create Listing
-- Edit Listing
+![Home Page](./screenshots/home-page.png)
+
+---
+
+## 📄 Listing Details
+
+View complete information about a selected property.
+
+![Listing Details](./screenshots/listing-details.png)
+
+---
+
+## ➕ Create New Listing
+
+Create and publish a new property listing.
+
+![Create Listing](./screenshots/create-listing.png)
+
+---
+
+## ✏️ Edit Listing
+
+Update details of an existing listing.
+
+![Edit Listing](./screenshots/edit-listing.png)
 
 ---
 
@@ -160,55 +180,55 @@ Example:
 - User Authentication
 - Login & Signup
 - Authorization
-- Image Upload using Cloudinary
+- Cloudinary Image Upload
 - Reviews & Ratings
-- Search Functionality
-- Filters by Price, Category & Location
 - Interactive Maps
+- Search Functionality
+- Category Filters
 - Booking System
-- Wishlist Feature
-- Payment Integration
-- Mobile Responsive Improvements
+- Wishlist
+- Payment Gateway Integration
+- Fully Responsive Mobile UI
 
 ---
 
-## 📚 What I Learned
+## 📚 Learning Outcomes
 
-This project helped me gain practical experience with:
+This project helped me understand:
 
-- Express.js
-- REST APIs
+- Express.js Routing
 - CRUD Operations
-- MongoDB & Mongoose
+- REST APIs
 - MVC Architecture
-- Server-side Rendering
+- MongoDB & Mongoose
+- Server-side Rendering using EJS
 - Middleware
-- Form Validation using Joi
+- Joi Validation
 - Error Handling
-- Bootstrap UI Development
+- Bootstrap
 - Git & GitHub Workflow
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome!
+Contributions are welcome.
 
-1. Fork this repository
+1. Fork the repository
 
-2. Create a new branch
+2. Create a branch
 
 ```bash
 git checkout -b feature-name
 ```
 
-3. Commit your changes
+3. Commit changes
 
 ```bash
-git commit -m "Add new feature"
+git commit -m "Add feature"
 ```
 
-4. Push to GitHub
+4. Push
 
 ```bash
 git push origin feature-name
@@ -228,14 +248,12 @@ GitHub: https://github.com/Ankit3767
 
 ## ⭐ Support
 
-If you like this project, consider giving it a ⭐ on GitHub.
-
-It motivates me to build more useful projects and continuously improve this one.
+If you found this project useful, consider giving it a **⭐ Star** on GitHub.
 
 ---
 
 ## 📄 License
 
-This project is developed for educational and learning purposes only.
+This project is created for educational purposes only.
 
-Inspired by Airbnb's design and functionality. It is not affiliated with or endorsed by Airbnb.
+Inspired by Airbnb's user interface and functionality.
