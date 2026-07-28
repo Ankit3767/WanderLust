@@ -30,6 +30,11 @@
       </div>
 
       <div class="mb-3">
+        Original Listing Image <br>
+        <img src="<%= originalImageUrl %>"/>
+      </div>
+
+      <div class="mb-3">
         <label for="image" class="form-label">Upload New Image</label>
         <input
           name="listing[image]"
@@ -37,7 +42,6 @@
           class="form-control"
           accept="image/*"
         />
-        <div class="invalid-feedback">Please enter a valid link/URL</div>
       </div>
 
       <div class="row">
