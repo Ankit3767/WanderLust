@@ -1,259 +1,179 @@
-# 🏡 Airbnb Clone
+# 🌍 WanderLust
 
-A full-stack Airbnb-inspired web application built with **Node.js**, **Express.js**, **MongoDB**, **Mongoose**, **EJS**, and **Bootstrap**. The application allows users to browse, create, update, and delete property listings while following the MVC architecture and RESTful routing principles.
-
----
-
-## 📖 About
-
-This project is an Airbnb-inspired web application developed to practice full-stack web development concepts. It demonstrates CRUD operations, server-side rendering, MongoDB database integration, routing, middleware, form validation, and responsive UI development.
+WanderLust is a full-stack Airbnb-inspired web application where users can explore, create, edit, and manage property listings. The application includes secure authentication, image uploads, reviews, and role-based authorization, providing a smooth and user-friendly rental listing experience.
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- 🏠 Browse all property listings
-- 📄 View listing details
-- ➕ Create new listings
-- ✏️ Update existing listings
-- 🗑️ Delete listings
-- 📦 RESTful Routes
-- ✅ Server-side Validation using Joi
-- ⚠️ Custom Error Handling
-- 🎨 Responsive UI with Bootstrap
-- 🗂️ MVC Architecture
-- 🗃️ MongoDB Database Integration
+* 🔐 User Authentication (Register & Login)
+* 👤 Authorization for Listings and Reviews
+* 🏡 Create, Edit, and Delete Property Listings
+* 🖼️ Upload Listing Images with Cloudinary
+* ⭐ Add, Edit, and Delete Reviews
+* 📱 Fully Responsive User Interface
+* 🛡️ Secure Sessions and Flash Messages
+* ✅ Server-side Validation using Joi
+* 📂 MVC Architecture for Better Code Organization
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
 ### Frontend
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- EJS
+* HTML5
+* CSS3
+* Bootstrap 5
+* EJS
 
 ### Backend
 
-- Node.js
-- Express.js
+* Node.js
+* Express.js
 
 ### Database
 
-- MongoDB
-- Mongoose
+* MongoDB
+* Mongoose
 
-### Packages Used
+### Authentication & Security
 
-- Express
-- Mongoose
-- EJS
-- EJS-Mate
-- Joi
-- Method-Override
+* Passport.js
+* Passport Local Strategy
+* Express Session
+* Connect Flash
+* Joi Validation
+
+### Image Storage
+
+* Cloudinary
+* Multer
 
 ---
 
-## 📁 Project Structure
+# 📁 Project Structure
 
-```
-Airbnb-1
-│
-├── init/
+```text
+wanderlust/
+├── controllers/
 ├── models/
+├── routes/
+├── views/
+│   ├── listings/
+│   ├── users/
+│   └── includes/
 ├── public/
 │   ├── css/
-│   ├── js/
-│   └── images/
-│
+│   └── js/
 ├── utils/
-├── views/
-│   ├── layouts/
-│   ├── listings/
-│   └── includes/
-│
-├── screenshots/
-│
-├── app.js
+├── middleware.js
+├── cloudConfig.js
 ├── schema.js
+├── app.js
 ├── package.json
-├── package-lock.json
-└── README.md
+└── .env
 ```
 
 ---
 
-## 🚀 Installation
+# 🚀 Installation
 
-### Clone Repository
-
-```bash
-git clone https://github.com/Ankit3767/Airbnb-1.git
-```
-
-### Move into Project Folder
+### Clone the repository
 
 ```bash
-cd Airbnb-1
+git clone https://github.com/your-username/wanderlust.git
+cd wanderlust
 ```
 
-### Install Dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### Start MongoDB
+### Create a `.env` file
 
-Ensure MongoDB is running locally.
+```env
+ATLASDB_URL=
 
-Default connection:
+SECRET=
 
-```text
-mongodb://127.0.0.1:27017/wanderlust
+CLOUD_NAME=
+CLOUD_API_KEY=
+CLOUD_API_SECRET=
 ```
 
-### Initialize Sample Data (Optional)
+### Run the application
 
 ```bash
-node init/index.js
-```
-
-### Run the Project
-
-```bash
-node app.js
+npm start
 ```
 
 or
 
 ```bash
+node app.js
+```
+
+For development:
+
+```bash
 nodemon app.js
 ```
 
-Visit:
+---
 
-```
-http://localhost:3767/listings
-```
+# 📦 Main Dependencies
+
+* Express.js
+* MongoDB
+* Mongoose
+* Passport.js
+* Passport Local
+* EJS
+* Bootstrap 5
+* Cloudinary
+* Multer
+* Joi
+* Method Override
+* Connect Flash
+* Dotenv
 
 ---
 
-# 📸 Project Screenshots
+# 🎯 Future Improvements
 
-## 🏠 Home Page
-
-Displays all available property listings.
-
-![Home Page](./screenshots/home-page.png)
-
----
-
-## 📄 Listing Details
-
-View complete information about a selected property.
-
-![Listing Details](./screenshots/listing-details.png)
+* ❤️ Wishlist/Favorites
+* 🔍 Search and Filters
+* 📅 Booking System
+* 💳 Payment Integration
+* 📍 Maps & Location Support
+* 📧 Email Notifications
+* 🌙 Dark Mode
 
 ---
 
-## ➕ Create New Listing
+# 🤝 Contributing
 
-Create and publish a new property listing.
-
-![Create Listing](./screenshots/create-listing.png)
-
----
-
-## ✏️ Edit Listing
-
-Update details of an existing listing.
-
-![Edit Listing](./screenshots/edit-listing.png)
-
----
-
-## 🚀 Future Enhancements
-
-- User Authentication
-- Login & Signup
-- Authorization
-- Cloudinary Image Upload
-- Reviews & Ratings
-- Interactive Maps
-- Search Functionality
-- Category Filters
-- Booking System
-- Wishlist
-- Payment Gateway Integration
-- Fully Responsive Mobile UI
-
----
-
-## 📚 Learning Outcomes
-
-This project helped me understand:
-
-- Express.js Routing
-- CRUD Operations
-- REST APIs
-- MVC Architecture
-- MongoDB & Mongoose
-- Server-side Rendering using EJS
-- Middleware
-- Joi Validation
-- Error Handling
-- Bootstrap
-- Git & GitHub Workflow
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome.
+Contributions are welcome!
 
 1. Fork the repository
-
-2. Create a branch
-
-```bash
-git checkout -b feature-name
-```
-
-3. Commit changes
-
-```bash
-git commit -m "Add feature"
-```
-
-4. Push
-
-```bash
-git push origin feature-name
-```
-
+2. Create a new feature branch
+3. Commit your changes
+4. Push to your branch
 5. Open a Pull Request
 
 ---
 
-## 👨‍💻 Author
+# 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 👨‍💻 Author
 
 **Ankit Kumar**
 
-GitHub: https://github.com/Ankit3767
-
----
-
-## ⭐ Support
-
-If you found this project useful, consider giving it a **⭐ Star** on GitHub.
-
----
-
-## 📄 License
-
-This project is created for educational purposes only.
-
-Inspired by Airbnb's user interface and functionality.
+If you found this project helpful, don't forget to ⭐ the repository!
