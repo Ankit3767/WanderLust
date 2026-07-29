@@ -1,6 +1,10 @@
 # 🌍 WanderLust
 
-WanderLust is a full-stack Airbnb-inspired web application where users can explore, create, edit, and manage property listings. The application includes secure authentication, image uploads, reviews, and role-based authorization, providing a smooth and user-friendly rental listing experience.
+WanderLust is a full-stack Airbnb-inspired web application where users can explore, create, edit, and manage property listings. The application includes secure authentication, image uploads, reviews, and role-based authorization.
+
+## 🚀 Live Demo
+
+🌐 https://wanderlust-1ok4.onrender.com/
 
 ---
 
